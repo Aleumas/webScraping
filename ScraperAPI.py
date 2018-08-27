@@ -1,5 +1,6 @@
 
 from flask import Flask
+from flask import jsonify
 import WebScrape
 
 app = Flask(__name__)
@@ -7,4 +8,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return json.jsonify(f'{WebScrape.titles1}')
+    return (f'{WebScrape.NewTitles}')
