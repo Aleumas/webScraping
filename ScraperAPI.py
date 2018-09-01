@@ -8,4 +8,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return (f'{WebScrape.NewTitles}')
+    return (WebScrape.NewTitles)

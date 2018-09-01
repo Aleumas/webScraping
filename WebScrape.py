@@ -19,10 +19,8 @@ for title in crunchTitles:
     OldTitles.append(titleName)
 
 dataFrame = pandas.DataFrame(OldTitles)
-
+''
 for i in OldTitles:
     fixedTitle = str(i)
     fixedTitle = fixedTitle.replace('\xa0', ' ')
     NewTitles.append(fixedTitle)
-
-print(NewTitles)
